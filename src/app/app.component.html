@@ -1,0 +1,12 @@
+<app-component [studentList] = "printStudents()"></app-component>
+<ul *ngIf = "printProceed">
+<li *ngFor = "let data of dataCollection">
+{{ data.studNo }}
+{{ data.studFname }}
+{{ data.studLname }}
+{{ data.studProg }}
+{{ data.studYr }}
+</li>
+</ul>
+<app-add-entry [student] = "getStudent()"></app-add-entry>
+<app-print-entry [studentCollection] = "getStudColl()"></app-print-entry>
